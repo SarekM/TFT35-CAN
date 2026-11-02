@@ -51,7 +51,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_FSMC_Init(void);
 /* USER CODE BEGIN PFP */
-
+void mainApp(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -90,13 +90,14 @@ int main(void)
   MX_GPIO_Init();
   MX_FSMC_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_GPIO_WritePin(GPIOD, LCD_LED_PIN_Pin, GPIO_PIN_SET);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  mainApp();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -242,10 +243,10 @@ static void MX_FSMC_Init(void)
   hsram1.Init.AsynchronousWait = FSMC_ASYNCHRONOUS_WAIT_DISABLE;
   hsram1.Init.WriteBurst = FSMC_WRITE_BURST_DISABLE;
   /* Timing */
-  Timing.AddressSetupTime = 15;
+  Timing.AddressSetupTime = 2;
   Timing.AddressHoldTime = 15;
-  Timing.DataSetupTime = 255;
-  Timing.BusTurnAroundDuration = 15;
+  Timing.DataSetupTime = 8;
+  Timing.BusTurnAroundDuration = 1;
   Timing.CLKDivision = 16;
   Timing.DataLatency = 17;
   Timing.AccessMode = FSMC_ACCESS_MODE_A;

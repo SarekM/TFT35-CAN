@@ -20,9 +20,9 @@
 
 #include <stdio.h>
 #include "main.h"
-#include "ts.h"
-#include "stm32_adafruit_lcd.h"
-#include "stm32_adafruit_ts.h"
+#include "../../Drivers/Lcd/Inc/ts.h"
+#include "../../Drivers/Lcd/Inc/stm32_adafruit_lcd.h"
+#include "../../Drivers/Lcd/Inc/stm32_adafruit_ts.h"
 
 extern  TS_DrvTypeDef         *ts_drv;
 

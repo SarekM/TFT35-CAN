@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#include "../../Drivers/Lcd/Inc/stm32_adafruit_lcd.h"
 #include "main.h"
 #include "fatfs.h"
 #include "jpeglib.h"
 #include "jdata_conf.h"
-#include "stm32_adafruit_lcd.h"
 
 /* flash drive type (1=SD card, 2=USB pendrive */
 #define FLASHTYPE             1

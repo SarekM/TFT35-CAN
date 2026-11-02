@@ -1,6 +1,7 @@
 #include <stdint.h>
-#include "lcd.h"
-#include "bmp.h"
+
+#include "../../Drivers/Lcd/Inc/bmp.h"
+#include "../../Drivers/Lcd/Inc/lcd.h"
 
 #define   WIDTH    60
 #define   HEIGHT  100

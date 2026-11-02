@@ -12,7 +12,7 @@
 #include "3d_filled_vector.h"
 
 /* BSP_LCD_... */
-#include "stm32_adafruit_lcd.h"
+#include "../../../Drivers/Lcd/Inc/stm32_adafruit_lcd.h"
 
 //=============================================================================
 

@@ -8,10 +8,11 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
+
+#include "../../Drivers/Lcd/Inc/stm32_adafruit_lcd.h"
 #include "main.h"
 
 /* BSP_LCD_... */
-#include "stm32_adafruit_lcd.h"
 
 extern   RTC_HandleTypeDef hrtc;
 

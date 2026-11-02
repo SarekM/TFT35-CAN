@@ -1,11 +1,10 @@
 #include <stdlib.h>
+
+#include "../../Drivers/Lcd/Inc/stm32_adafruit_lcd.h"
+#include "../../Drivers/Lcd/Inc/stm32_adafruit_ts.h"
 #include "main.h"
 
 /* BSP LCD driver */
-#include "stm32_adafruit_lcd.h"
-
-/* BSP TS driver */
-#include "stm32_adafruit_ts.h"
 
 #ifdef osCMSIS
 void StartDefaultTask(void const * argument)

@@ -1,0 +1,2 @@
+../Drivers/Lcd/Src/stm32_adafruit_ts.c:17:9:BSP_TS_Init	3
+../Drivers/Lcd/Src/stm32_adafruit_ts.c:41:6:BSP_TS_GetState	6

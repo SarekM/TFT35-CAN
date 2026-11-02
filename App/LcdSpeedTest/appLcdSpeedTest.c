@@ -36,11 +36,11 @@
 #include <string.h>
 #include "main.h"
 
-#include "lcd.h"
-#include "bmp.h"
+#include "../../Drivers/Lcd/Inc/lcd.h"
+#include "../../Drivers/Lcd/Inc/bmp.h"
 
 /* BSP_LCD_... */
-#include "stm32_adafruit_lcd.h"
+#include "../../Drivers/Lcd/Inc/stm32_adafruit_lcd.h"
 
 #ifdef  __CC_ARM
 #define random()   rand()

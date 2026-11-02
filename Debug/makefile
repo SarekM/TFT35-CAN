@@ -10,7 +10,11 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include Startup/subdir.mk
--include Src/subdir.mk
+-include Drivers/STM32F2xx_HAL_Driver/Src/subdir.mk
+-include Drivers/Lcd/Src/subdir.mk
+-include Drivers/Lcd/Fonts/subdir.mk
+-include Core/Src/subdir.mk
+-include App/LcdSpeedTest/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -59,8 +63,8 @@ all: main-build
 main-build: TFT35.elf secondary-outputs
 
 # Tool invocations
-TFT35.elf TFT35.map: $(OBJS) $(USER_OBJS) C:\Users\micha\Documents\Studia\Racing\Github\TFT35\STM32F207VCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "TFT35.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\micha\Documents\Studia\Racing\Github\TFT35\STM32F207VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TFT35.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+TFT35.elf TFT35.map: $(OBJS) $(USER_OBJS) Z:\Documents\Documents\Studia\Racing\Github\TFT35\ CAN\STM32F207VCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "TFT35.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"Z:\Documents\Documents\Studia\Racing\Github\TFT35 CAN\STM32F207VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TFT35.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -1,0 +1,9 @@
+../Drivers/Lcd/Src/ts_xpt2046.c:107:6:TS_IO_Delay	2
+../Drivers/Lcd/Src/ts_xpt2046.c:140:6:TsWrite8	1
+../Drivers/Lcd/Src/ts_xpt2046.c:161:10:TsRead16	1
+../Drivers/Lcd/Src/ts_xpt2046.c:251:6:TS_IO_Init	1
+../Drivers/Lcd/Src/ts_xpt2046.c:293:10:TS_IO_GetX	1
+../Drivers/Lcd/Src/ts_xpt2046.c:305:10:TS_IO_GetY	1
+../Drivers/Lcd/Src/ts_xpt2046.c:317:10:TS_IO_GetZ1	1
+../Drivers/Lcd/Src/ts_xpt2046.c:329:10:TS_IO_GetZ2	1
+../Drivers/Lcd/Src/ts_xpt2046.c:343:9:TS_IO_DetectToch	3

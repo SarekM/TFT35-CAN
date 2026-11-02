@@ -22,6 +22,10 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-Src \
+App/LcdSpeedTest \
+Core/Src \
+Drivers/Lcd/Fonts \
+Drivers/Lcd/Src \
+Drivers/STM32F2xx_HAL_Driver/Src \
 Startup \
 
